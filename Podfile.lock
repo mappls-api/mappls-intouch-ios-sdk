@@ -1,0 +1,37 @@
+PODS:
+  - MapplsAPICore (1.0.14)
+  - MapplsIntouchCore (1.0.1):
+    - MapplsIntouchCore/Complete (= 1.0.1)
+  - MapplsIntouchCore/Base (1.0.1)
+  - MapplsIntouchCore/Complete (1.0.1):
+    - MapplsIntouchCore/Base
+    - MapplsIntouchCore/Dependencies
+  - MapplsIntouchCore/Dependencies (1.0.1):
+    - MapplsAPICore (~> 1.0.9)
+  - MapplsLMS (1.0.5):
+    - MapplsLMS/Complete (= 1.0.5)
+  - MapplsLMS/Base (1.0.5)
+  - MapplsLMS/Complete (1.0.5):
+    - MapplsLMS/Base
+    - MapplsLMS/Dependencies
+  - MapplsLMS/Dependencies (1.0.5):
+    - MapplsAPICore (~> 1.0.13)
+
+DEPENDENCIES:
+  - MapplsIntouchCore
+  - MapplsLMS
+
+SPEC REPOS:
+  trunk:
+    - MapplsAPICore
+    - MapplsIntouchCore
+    - MapplsLMS
+
+SPEC CHECKSUMS:
+  MapplsAPICore: 82cf3539a8a46494865ea645caa7c9c46b652773
+  MapplsIntouchCore: b3ab2de5e8933b7c5af491b5543528b81fde7491
+  MapplsLMS: c32e855a5bfe6e6a1f5a355c8f1c51ec54ffb15d
+
+PODFILE CHECKSUM: 2e892b7e98bb9f82fa91a470175cf08de6d47e94
+
+COCOAPODS: 1.15.2
