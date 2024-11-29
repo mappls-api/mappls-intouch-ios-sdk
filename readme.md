@@ -17,13 +17,6 @@ To get started, explore the InTouch Demo App.
 - [Integrate the SDK](#IntegrateIntouchSDK): Integrate the SDK into your app
 -  [Dashboard](https://intouch.mappls.com/nextgen/#/home/dashboard) See all your devices' locations on Mappls Intouch Dashboard
 
-## [Installation](#Installation)
-
-This library is available through `CocoaPods`. To install, simply add the following line to your `podfile`:
-
-```ruby
-pod 'MapplsIntouchCore', '1.0.1'
-```
 
 Run pod repo update && pod install and open the resulting Xcode workspace.
 
@@ -32,6 +25,7 @@ Run pod repo update && pod install and open the resulting Xcode workspace.
 | Version | Supported SDK Version |
 | ------- | --------------------- |
 | [1.0.2](./docs/v1.0.2/README.md) | - [MapplsIntouchCore - 1.0.2](./docs/v1.0.2/MapplsIntouchCore.md)|
+
 . . . . . .
 
 For More History Go Here: [Version History](./Version-History.md)
