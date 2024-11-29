@@ -1,6 +1,6 @@
 [<img src="https://about.mappls.com/images/mappls-b-logo.svg" height="80"/> </p>](https://www.mappls.com/api)
 
-# [Mappls Intouch SDK - MapplsIntouchCore]()
+# [Mappls Intouch SDK]()
 
 ## [Introduction](#Introduction)
 
@@ -10,10 +10,11 @@ Using this SDK, Your app shall fetch the live location from the end user mobile 
 
 You will get seemless location benifits which caterted to different domains like `logistics`, `delivery tracking` , `Employee tracking` , `live location sharing`  etc.
 
--  [Publishable Key](https://apisupport@mappls.com) Get your Publishable Key please contact from apiSupport url (https://apisupport@mappls.com)
-
--  [Integrate the SDK]() Integrate the SDK into your app
-
+To get started, explore the InTouch Demo App.
+ 
+- [Setup](#Setup): Please contact apisupport@mappls.com to get the Intouch SDK authorisation for your Client ID and Client Secret.
+- [Quick Start](https://github.com/mappls-api/mappls-intouch-ios-sdk/blob/main/readme.md): Start with a ready-to-go app
+- [Integrate the SDK](#IntegrateIntouchSDK): Integrate the SDK into your app
 -  [Dashboard](https://intouch.mappls.com/nextgen/#/home/dashboard) See all your devices' locations on Mappls Intouch Dashboard
 
 ## [Installation](#Installation)
@@ -26,110 +27,21 @@ pod 'MapplsIntouchCore', '1.0.1'
 
 Run pod repo update && pod install and open the resulting Xcode workspace.
 
-## [Version History](#Version-History)
+## [Documentation History](#Documentation-History)
 
-| Version | Dated | Description |
-| :---- | :---- | :---- |
-| `1.0.1`| 16 Apr 2024  | Fixed some bugs related to data types. |
-| `1.0.0`| 05 Oct 2023  | Fixed location tracking issue. |
-| `1.0.0.beta.9 `| 23 Aug 2023  | |
-| `1.0.0.beta.1 `| 13 Apr 2023  | |
+| Version | Supported SDK Version |
+| ------- | --------------------- |
+| [1.0.2](./docs/v1.0.2/README.md) | - [MapplsIntouchCore - 1.0.2](./docs/v1.0.2/MapplsIntouchCore.md)|
+. . . . . .
 
-### [Dependencies](#Dependencies)
+For More History Go Here: [Version History](./Version-History.md)
 
-This library depends upon `MapplsAPICore`. All dependent libraries will be automatically installed on using CocoaPods.
-
-## [Setup](#Setup)
-
-### [Publishable Key](#Publishable-Key). 
-
-We use Publishable key to identify your account details and assign all your users device under single account. 
-
-After getting the publishable key, you can [start with the IntouchDemo app](https://github.com/mappls-api), or [Integrate the Intouch SDK]([https://github.com/mappls.com](https://github.com/mappls-api)) in your app.
-
-Setup a Project
-This guide allows you to add a live location tracking to an iOS app. 
-
-[Xcode IDE](https://developer.apple.com/xcode/) recommended download Xcode latest version from Appstore.
-
-### [Location Permission](#Location-Permission)
-
-For Privacy Policy of Location
-
-Location Permission Map Prompt(Always allow)
-For apps granted Always Allow location permissions, iOS 13 will periodically display a "map prompt" The "map prompt" displays the location points collected by the app. In testing, we've identified that this prompt will be triggered after 3 consecutive days of background location use, and will continue to appear periodically with continued use.
-
-Add Location permission into your plist file
- Configure the location services by adding the following entries to the Info.plist file. locations and motion keys are mandatory.
-
-- Location permissions
-- CoreMotion Permissions
-
-Above permissions can be added by using below keys in Info.plist of an application:
-
-```    
-<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-<string>""</string>
-<key>NSLocationAlwaysUsageDescription</key>
-<string>""</string>
-<key>NSLocationWhenInUseUsageDescription</key>
-<string>""</string>
-<key>NSMotionUsageDescription</key>
-<string>""</string>
-```
-
-In your project settings, go to **Capabilities > Background Modes** and turn on background fetch, location updates.
-
-To use SDK functionalities you must write import statements as shown below:
-
-```swift
-import MapplsIntouchCore
-```
-
-## [Initialization](#Initialization)
-
-To work with SDK first call `setup` function on entry point of app i.e. on calling of `didFinishLaunchingWithOptions` of app.
-
-```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    Intouch.shared.setup()
-}
-```
-
-Before start tracking SDK needs to be authenticate first. `Authenticate` SDK by calling function `initializeForCredentials` using your keys.
-
-```swift
-Intouch.shared.initializeForCredentials(clientId: ci, clientSecret: cs, deviceName: trimmedText, deviceIdentifier: nil) { isSuccess in
-    if isSuccess {
-        // Take action for success means now you can start tracking
-    } else {
-        // Take action for error
-    }
-} failure: { error in
-    var errorMessage = "Unknown Error"
-    if let error = error {
-        errorMessage = error.localizedDescription
-    }
-    // Take action for error
-}
-```
-
-### [Start Tracking](#Start-Tracking)
-
-Call the below method to track your app user's phone live location.  Make sure your internet connection  will be on that time.
-
-```swift
-Intouch.shared.startTracking()
-``` 
-
-### [Stop Tracking](#Stop-Tracking)
-
-Call the below method to Stop Track your app user's phone live location. 
-We put these lines for stop beacon tracking  and  sensors  like gyro, aceelerometer., barometer , motion detectors.
-
-```swift
-Intouch.shared.stopTracking()
-``` 
+## [Table Of Content](#Table-Of-Content)
+- [Mappls Intoch Core](./docs/v1.0.2/MapplsIntouchCore.md)[](#Mappls-Intouch-Core)
+     * [Getting Started](./docs/v1.0.2/MapplsIntouchCore.md#Introduction)
+     * [Installation](./docs/v1.0.2/MapplsIntouchCore.md#Installation)
+     * [Initialization](./docs/v1.0.2/MapplsIntouchCore.md#Initialization)
+     * [Configuarions](./docs/v1.0.2/MapplsIntouchCore.md#intouch-configurations)
 
 <br>
 

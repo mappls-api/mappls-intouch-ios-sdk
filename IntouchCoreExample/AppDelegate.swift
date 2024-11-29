@@ -13,8 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let ci = "cf65fc43646877ab7a76765dc167dbf3"
-        let cs = "cf65fc43646877ab7a76765dc167dbf3"
         MapplsAccountManager.setClientId(ci)
         MapplsAccountManager.setClientSecret(cs)
         
