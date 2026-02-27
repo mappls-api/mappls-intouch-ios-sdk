@@ -76,12 +76,12 @@ class ViewController: UIViewController {
         configureButtonStatus()
     }
     
-    @objc func configTapped() {
-        let configuration = MapplsIntouchConfiguration()
-        configuration.allowsBackgroundLocationUpdates = true
-        // To set the how t
-        let pollingProfile = configuration.setPollingProfile(profile: .slow)
-        configuration.desiredAccuracy = 100
+    @objc func configTapped() {        
+        let controller = ConfigViewController()
+        let nav = UINavigationController(rootViewController: controller)
+        nav.modalPresentationStyle = .formSheet
+        present(nav, animated: true)
+        
     }
     
     func configureButtonStatus() {
@@ -123,6 +123,7 @@ class ViewController: UIViewController {
     
     @objc func startTracking() {
         self.activityIndicator.startAnimating()
+        
         Intouch.shared.startTracking { isSuccess in
             if isSuccess {
                 DispatchQueue.main.async {

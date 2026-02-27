@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350D89102F51B01100A68675 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350D890F2F51B01100A68675 /* ConfigViewController.swift */; };
 		35B0D8612CF85B2500DCC0BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0D8602CF85B2500DCC0BA /* AppDelegate.swift */; };
 		35B0D8632CF85B2500DCC0BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0D8622CF85B2500DCC0BA /* SceneDelegate.swift */; };
 		35B0D8652CF85B2500DCC0BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0D8642CF85B2500DCC0BA /* ViewController.swift */; };
 		35B0D8682CF85B2500DCC0BA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 35B0D8672CF85B2500DCC0BA /* Base */; };
 		35B0D86A2CF85B2600DCC0BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B0D8692CF85B2600DCC0BA /* Assets.xcassets */; };
 		35B0D86D2CF85B2600DCC0BA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 35B0D86C2CF85B2600DCC0BA /* Base */; };
-		35B0D8752CF8646F00DCC0BA /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0D8742CF8646F00DCC0BA /* ConfigViewController.swift */; };
 		F57216B65D586512A17B7F19 /* Pods_IntouchCoreExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7A52BEA6864D55C68B8469 /* Pods_IntouchCoreExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		350D890F2F51B01100A68675 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		35B0D85D2CF85B2500DCC0BA /* IntouchCoreExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntouchCoreExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B0D8602CF85B2500DCC0BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35B0D8622CF85B2500DCC0BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		35B0D8692CF85B2600DCC0BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35B0D86C2CF85B2600DCC0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35B0D86E2CF85B2600DCC0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35B0D8742CF8646F00DCC0BA /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		956A63515B0482C9D9F9E8C2 /* Pods-IntouchCoreExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntouchCoreExample.release.xcconfig"; path = "Target Support Files/Pods-IntouchCoreExample/Pods-IntouchCoreExample.release.xcconfig"; sourceTree = "<group>"; };
 		9CE0DB2C84D1252E2E50F399 /* Pods-IntouchCoreExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntouchCoreExample.debug.xcconfig"; path = "Target Support Files/Pods-IntouchCoreExample/Pods-IntouchCoreExample.debug.xcconfig"; sourceTree = "<group>"; };
 		AC7A52BEA6864D55C68B8469 /* Pods_IntouchCoreExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntouchCoreExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +85,7 @@
 				35B0D8692CF85B2600DCC0BA /* Assets.xcassets */,
 				35B0D86B2CF85B2600DCC0BA /* LaunchScreen.storyboard */,
 				35B0D86E2CF85B2600DCC0BA /* Info.plist */,
-				35B0D8742CF8646F00DCC0BA /* ConfigViewController.swift */,
+				350D890F2F51B01100A68675 /* ConfigViewController.swift */,
 			);
 			path = IntouchCoreExample;
 			sourceTree = "<group>";
@@ -185,9 +185,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IntouchCoreExample/Pods-IntouchCoreExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IntouchCoreExample/Pods-IntouchCoreExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -224,8 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				35B0D8652CF85B2500DCC0BA /* ViewController.swift in Sources */,
+				350D89102F51B01100A68675 /* ConfigViewController.swift in Sources */,
 				35B0D8612CF85B2500DCC0BA /* AppDelegate.swift in Sources */,
-				35B0D8752CF8646F00DCC0BA /* ConfigViewController.swift in Sources */,
 				35B0D8632CF85B2500DCC0BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

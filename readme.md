@@ -24,6 +24,7 @@ Run pod repo update && pod install and open the resulting Xcode workspace.
 
 | Version | Supported SDK Version |
 | ------- | --------------------- |
+| [1.0.3](./docs/v1.0.3/README.md) | - [MapplsIntouchCore - 1.0.3](./docs/v1.0.3/MapplsIntouchCore.md)|
 | [1.0.2](./docs/v1.0.2/README.md) | - [MapplsIntouchCore - 1.0.2](./docs/v1.0.2/MapplsIntouchCore.md)|
 
 . . . . . .
@@ -31,11 +32,11 @@ Run pod repo update && pod install and open the resulting Xcode workspace.
 For More History Go Here: [Version History](./Version-History.md)
 
 ## [Table Of Content](#Table-Of-Content)
-- [Mappls Intoch Core](./docs/v1.0.2/MapplsIntouchCore.md)[](#Mappls-Intouch-Core)
-     * [Getting Started](./docs/v1.0.2/MapplsIntouchCore.md#Introduction)
-     * [Installation](./docs/v1.0.2/MapplsIntouchCore.md#Installation)
-     * [Initialization](./docs/v1.0.2/MapplsIntouchCore.md#Initialization)
-     * [Configuarions](./docs/v1.0.2/MapplsIntouchCore.md#intouch-configurations)
+- [Mappls Intoch Core](./docs/v1.0.3/MapplsIntouchCore.md)[](#Mappls-Intouch-Core)
+     * [Getting Started](./docs/v1.0.3/MapplsIntouchCore.md#Introduction)
+     * [Installation](./docs/v1.0.3/MapplsIntouchCore.md#Installation)
+     * [Initialization](./docs/v1.0.3/MapplsIntouchCore.md#Initialization)
+     * [Configuarions](./docs/v1.0.3/MapplsIntouchCore.md#intouch-configurations)
 
 <br>
 
