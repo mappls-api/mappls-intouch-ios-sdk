@@ -24,6 +24,7 @@ Run pod repo update && pod install and open the resulting Xcode workspace.
 
 | Version | Supported SDK Version |
 | ------- | --------------------- |
+| [1.0.4](./docs/v1.0.4/README.md) | - [MapplsIntouchCore - 1.0.4](./docs/v1.0.4/MapplsIntouchCore.md)|
 | [1.0.3](./docs/v1.0.3/README.md) | - [MapplsIntouchCore - 1.0.3](./docs/v1.0.3/MapplsIntouchCore.md)|
 | [1.0.2](./docs/v1.0.2/README.md) | - [MapplsIntouchCore - 1.0.2](./docs/v1.0.2/MapplsIntouchCore.md)|
 

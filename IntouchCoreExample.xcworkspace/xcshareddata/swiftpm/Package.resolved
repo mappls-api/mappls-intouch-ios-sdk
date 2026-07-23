@@ -1,0 +1,24 @@
+{
+  "originHash" : "8ccbef47f0fa2fbb891909a9c7ef08b73f26744fd86d9ed80fb3a9fda53b4716",
+  "pins" : [
+    {
+      "identity" : "mappls-api-core-distribution",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MapmyIndia/mappls-api-core-distribution.git",
+      "state" : {
+        "revision" : "939eae99c3ce399cc220825b001220b32eeec9ce",
+        "version" : "1.0.18"
+      }
+    },
+    {
+      "identity" : "mappls-intouch-core-ios-distribution",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MapmyIndia/mappls-intouch-core-ios-distribution.git",
+      "state" : {
+        "revision" : "9549a7d4de82e33c4ac072d6676a48526a4a5c5a",
+        "version" : "1.0.4"
+      }
+    }
+  ],
+  "version" : 3
+}

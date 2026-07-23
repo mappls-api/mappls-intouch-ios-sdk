@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		350D89102F51B01100A68675 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350D890F2F51B01100A68675 /* ConfigViewController.swift */; };
+		355CBC4930124C0F00921BB8 /* MapplsAPICore in Frameworks */ = {isa = PBXBuildFile; productRef = 355CBC4830124C0F00921BB8 /* MapplsAPICore */; };
+		355CBC4C30124C3900921BB8 /* MapplsIntouchCore in Frameworks */ = {isa = PBXBuildFile; productRef = 355CBC4B30124C3900921BB8 /* MapplsIntouchCore */; };
 		35B0D8612CF85B2500DCC0BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0D8602CF85B2500DCC0BA /* AppDelegate.swift */; };
 		35B0D8632CF85B2500DCC0BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0D8622CF85B2500DCC0BA /* SceneDelegate.swift */; };
 		35B0D8652CF85B2500DCC0BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0D8642CF85B2500DCC0BA /* ViewController.swift */; };
@@ -51,6 +53,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F57216B65D586512A17B7F19 /* Pods_IntouchCoreExample.framework in Frameworks */,
+				355CBC4C30124C3900921BB8 /* MapplsIntouchCore in Frameworks */,
+				355CBC4930124C0F00921BB8 /* MapplsAPICore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +122,6 @@
 				35B0D8592CF85B2500DCC0BA /* Sources */,
 				35B0D85A2CF85B2500DCC0BA /* Frameworks */,
 				35B0D85B2CF85B2500DCC0BA /* Resources */,
-				3679939EC150E08E85157405 /* [CP] Embed Pods Frameworks */,
 				35B0D8802CF871A400DCC0BA /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -154,6 +157,10 @@
 				Base,
 			);
 			mainGroup = 35B0D8542CF85B2500DCC0BA;
+			packageReferences = (
+				355CBC4730124C0F00921BB8 /* XCRemoteSwiftPackageReference "mappls-api-core-distribution" */,
+				355CBC4A30124C3900921BB8 /* XCRemoteSwiftPackageReference "mappls-intouch-core-ios-distribution" */,
+			);
 			productRefGroup = 35B0D85E2CF85B2500DCC0BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,27 +184,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3679939EC150E08E85157405 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntouchCoreExample/Pods-IntouchCoreExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntouchCoreExample/Pods-IntouchCoreExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntouchCoreExample/Pods-IntouchCoreExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9CC2A1AEA538921FDDEC3CCD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,6 +453,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		355CBC4730124C0F00921BB8 /* XCRemoteSwiftPackageReference "mappls-api-core-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MapmyIndia/mappls-api-core-distribution.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.18;
+			};
+		};
+		355CBC4A30124C3900921BB8 /* XCRemoteSwiftPackageReference "mappls-intouch-core-ios-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MapmyIndia/mappls-intouch-core-ios-distribution.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		355CBC4830124C0F00921BB8 /* MapplsAPICore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 355CBC4730124C0F00921BB8 /* XCRemoteSwiftPackageReference "mappls-api-core-distribution" */;
+			productName = MapplsAPICore;
+		};
+		355CBC4B30124C3900921BB8 /* MapplsIntouchCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 355CBC4A30124C3900921BB8 /* XCRemoteSwiftPackageReference "mappls-intouch-core-ios-distribution" */;
+			productName = MapplsIntouchCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35B0D8552CF85B2500DCC0BA /* Project object */;
 }

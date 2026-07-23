@@ -4,8 +4,8 @@
 target 'IntouchCoreExample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod "MapplsIntouchCore/Base", "1.0.3"
-  pod "MapplsAPICore", "1.0.16"
+#  pod "MapplsIntouchCore/Base", "1.0.3"
+#  pod "MapplsAPICore", "1.0.18"
   # Pods for IntouchCoreExample
 
 end
